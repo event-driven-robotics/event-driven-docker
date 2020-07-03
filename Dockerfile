@@ -1,4 +1,4 @@
-ARG FROM=yarp:v3.2.1
+ARG FROM=yarp:latest
 
 FROM $FROM
 
