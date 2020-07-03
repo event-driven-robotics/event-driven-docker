@@ -1,4 +1,4 @@
-ARG FROM=eventdrivenrobotics/yarp:latest
+ARG FROM=eventdrivenrobotics/yarp:v3.2.1
 
 FROM $FROM
 
@@ -12,6 +12,5 @@ RUN cd $SOURCE_FOLDER && \
     cd event-driven &&\
     git checkout $vED_VERSION &&\
     mkdir build && cd build &&\
-    cmake -DCMAKE_BUILD_TYPE=$BUILD_TYPE \
-          .. &&\
+    cmake -DCMAKE_BUILD_TYPE=$BUILD_TYPE .. &&\
     make -j 8 install
