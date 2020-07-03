@@ -1,4 +1,4 @@
-ARG FROM=yarp:latest
+ARG FROM=eventdrivenrobotics/yarp:latest
 
 FROM $FROM
 
