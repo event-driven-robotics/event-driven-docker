@@ -13,4 +13,4 @@ RUN cd $SOURCE_FOLDER && \
     git checkout $vED_VERSION &&\
     mkdir build && cd build &&\
     cmake -DCMAKE_BUILD_TYPE=$BUILD_TYPE .. &&\
-    make -j 8 install
+    make -j `nproc` install
