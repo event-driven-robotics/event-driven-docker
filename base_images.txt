@@ -1,0 +1,8 @@
+YARP_IMAGE ED_VERSION
+eventdrivenrobotics/yarp:focal_v3.4.0  1.4
+eventdrivenrobotics/yarp:focal_v3.3.2  1.4
+eventdrivenrobotics/yarp:focal_v3.3.1  1.4
+eventdrivenrobotics/yarp:focal_v3.2.1  1.4
+eventdrivenrobotics/yarp:bionic_v3.3.2  1.4
+eventdrivenrobotics/yarp:bionic_v3.3.1  1.4
+eventdrivenrobotics/yarp:bionic_v3.2.1  1.4
