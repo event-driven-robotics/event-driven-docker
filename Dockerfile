@@ -1,6 +1,6 @@
-ARG FROM=eventdrivenrobotics/yarp:v3.2.1
+ARG YARP_IMAGE
 
-FROM $FROM
+FROM $YARP_IMAGE
 
 ARG ED_VERSION=1.4
 ARG BUILD_TYPE=Debug
