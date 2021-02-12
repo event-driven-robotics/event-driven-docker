@@ -23,7 +23,7 @@ do
         IMAGE_TAG="${DOCKER_REPO}:${yarp_tag_splitted[0]}_yarp_${yarp_tag_splitted[1]}_ed_v${versions[1]}"
 
 	args=""
-	for (( i=0; i<$len; i++ )); do
+	for (( i=0; i<$len - 1; i++ )); do
 		args=$(printf "%s%s %s=%s" "$args" "--build-arg" "${header[$i]}" "${versions[$i]} ")
 	done
 		

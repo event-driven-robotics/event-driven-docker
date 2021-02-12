@@ -23,5 +23,6 @@ do
 		
         echo "docker push ${IMAGE_TAG}"
         docker push ${IMAGE_TAG}
+        [ ${versions[2]+abc} ] &&  docker tag ${IMAGE_TAG} ${DOCKER_REPO}:${versions[2]} && docker push ${DOCKER_REPO}:${versions[2]}
 done
 } < base_images.txt
