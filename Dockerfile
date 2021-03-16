@@ -12,5 +12,10 @@ RUN cd $SOURCE_FOLDER && \
     cd event-driven &&\
     git checkout $vED_VERSION &&\
     mkdir build && cd build &&\
-    cmake -DCMAKE_BUILD_TYPE=$BUILD_TYPE .. &&\
+    cmake -DVLIB_DEPRECATED=ON -DCMAKE_BUILD_TYPE=$BUILD_TYPE .. &&\
     make -j `nproc` install
+RUN apt-get install -y \
+    libboost-all-dev \
+    && apt-get autoremove \
+    && apt-get clean \
+    && rm -rf /tmp/* /var/lib/apt/lists/* /var/tmp/*
